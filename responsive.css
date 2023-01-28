@@ -58,19 +58,16 @@
         grid-template-columns: repeat(5, 1fr);
     }
 
-    .gallery figure {
+    .gallery .gallery__hover {
         position: relative;
         margin: 0;
     }
 
-    .gallery img {
+    .gallery .gallery__hover img {
+        opacity: 1;
         display: block;
         height: 380px;
         transition: .5s ease;
-    }
-
-    .gallery__hover {
-        opacity: unset;
     }
 
     .gallery__hover:hover img {

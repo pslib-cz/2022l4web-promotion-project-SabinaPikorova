@@ -53,10 +53,6 @@
         margin-top: .5em;
     }
 
-    .about__width .fadeout:after {
-        bottom: 5.5em;
-    }
-
     .gallery {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -71,6 +67,10 @@
         display: block;
         height: 380px;
         transition: .5s ease;
+    }
+
+    .gallery__hover {
+        opacity: unset;
     }
 
     .gallery__hover:hover img {
@@ -144,24 +144,24 @@
 
 @media only screen and (min-width: 780px) {
     .about {
-        padding: 0;
+        padding-bottom: 0;
     }
-
-    .about .ExpandMoreContent {
-        border-top: 0;
-    }
-
-    .about .ExpandMoreContent p {
-        border-left: 1px solid white;
-        padding-left: 1.5em;
-    }
-    
     .about__width {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         width: 75%;
         margin: auto;
+    }
+
+    .about .ExpandMoreContent {
+        height: unset;
+    }
+
+    .about .ExpandMoreContent p {
+        border-left: 1px solid white;
+        border-top: 0;
+        padding: 0 0 0 1.5em;
     }
 
     .about h2 {
@@ -173,7 +173,8 @@
         margin: 2.5em 0 2.5em 1.5em;
     }
 
-    .about .fa-chevron-down {
+    
+    .ExpandMoreHolder {
         display: none;
     }
 }
@@ -187,14 +188,6 @@
 @media only screen and (min-width: 900px) {
     .footer-icons {
         width: 55%;
-    }
-
-    .ExpandMoreContent {
-        height: unset;
-    }
-
-    .ExpandMoreHolder {
-        display: none;
     }
 }
 

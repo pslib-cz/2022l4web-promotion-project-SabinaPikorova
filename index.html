@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lexend+Giga:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="expand_more.js"></script>
+    <script src="https://kit.fontawesome.com/190edfec9b.js" crossorigin="anonymous"></script>
+    <title>Kampaň</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-color">
+            <div class="navbar">
+                <span class="navbar__flex01">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </span>
+                <span class="navbar__flex02">
+                    <a href="mailto:sabasperky@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="tel:+420000000000"><i class="fa-solid fa-phone"></i></a>
+                </span>
+            </div>
+        </div>
+        <h1>SABA <span>šperky</span></h1>
+        <p class="slogan">Handcrafted pieces for all ages</p>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <div class="glide__slides">
+                    <div class="glide__slide"><img src="./images/nahrdelnik-sirka.jpg" alt=""></div>
+                    <div class="glide__slide"><img src="./images/naramek.jpg" alt=""></div>
+                    <div class="glide__slide"><img src="./images/prsten02-sirka.jpg" alt=""></div>
+                    <div class="glide__slide"><img src="./images/prsteny.jpg" alt=""></div>
+                    <div class="glide__slide"><img src="./images/zajic.jpg" alt=""></div>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                            class="fa-solid fa-circle-chevron-left"></i></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                            class="fa-solid fa-circle-chevron-right"></i></button>
+                </div>
+            </div>
+            <i class="fa-solid fa-angles-down"></i>
+            <a class="button" href="#">Nakupujte zde</a>
+    </header>
+    <main>
+        <div class="about">
+            <div class="about__width">
+                <h2>O mně</h2>
+                <div class="ExpandMoreContent" id="ShowMoreContent1">
+                    <p>Práce s přírodními materiály mě zajímala odjakživa, a proto jsem se rozhodla
+                        z tohoto koníčku udělat i své povolání. Takto jednoduše vznikla firma SABA šperky,
+                        sídlící v Hrádku nad Nisou na severu Čech. Šperky vyrábím ručně a každý kus je tak originál.
+                        Samozřejmostí je samozřejmě také jejich výroba z kvalitních přírodních surovin, především ze
+                        dřeva,
+                        minerálů či hornin, které jsou skvělou alternativou k tradičním materiálům jako jsou kovy či
+                        plasty.
+                        Šperky vytvářím nejen s citem pro jejich vzhled, ale také s ohledem na jejich odolnost.
+                        Největšími přednostmi šperků je jejich nestárnoucí vzhled pro všechny příležitosti,
+                        přívětivé ceny a možnost jejich objednání na zakázku a podle Vašich představ. </p>
+                </div>
+            </div>
+            <div class="ExpandMoreHolder">
+                <span expand-more data-hidetext="Méně" data-showtext="Více" data-target="ShowMoreContent1"
+                    class="btn-expand-more">Více</span>
+            </div>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="gallery">
+            <figure class="gallery__hover">
+                <img src="./images/prsten01-vyska.jpg" alt="Dřevěný prsten se vsazeným měděným drátem">
+                <figcaption>
+                    <div class="popis">Prsten z třešňového dřeva se vsazeným měděným drátem</div>
+                    <a class="kosik" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </figcaption>
+            </figure>
+            <figure class="gallery__hover">
+                <img src="./images/nahrdelnik-vyska.jpg" alt="Skleněný náhrdelník ve tvaru lahve s růženínem uvnitř">
+                <figcaption>
+                    <div class="popis">Skleněný náhrdelník ve tvaru lahve naplněný růženínem</div>
+                    <a class="kosik" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </figcaption>
+            </figure>
+            <figure class="gallery__hover">
+                <img src="./images/prsten02-vyska.jpg" alt="Prsten z pryskyřice">
+                <figcaption>
+                    <div class="popis">Červený třpytivý prsten z pryskyřice</div>
+                    <a class="kosik" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </figcaption>
+            </figure>
+            <figure class="gallery__hover">
+                <img src="./images/naramek.jpg" alt="Náramek z křemene">
+                <figcaption>
+                    <div class="popis">Náramek z bílého křemene</div>
+                    <a class="kosik" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </figcaption>
+            </figure>
+            <figure class="gallery__hover">
+                <img src="./images/zajic.jpg" alt="Dřevěný náhrdelník ve tvaru zajíce">
+                <figcaption>
+                    <div class="popis">Dřevěný náhrdelník ve tvaru zajíce</div>
+                    <a class="kosik" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <h2>Kontakty</h2>
+        <div class="footer-icons">
+            <div class="footer-icons__flex">
+                <a class="footer-icons__flex__second" href="#"><i class="fa-brands fa-instagram"></i>
+                    <p class="icon-text">@sabasperky</p>
+                </a>
+                <a class="footer-icons__flex__second" href="mailto:sabasperky@gmail.com"><i
+                        class="fa-regular fa-envelope"></i>
+                    <p class="icon-text">sabasperky@gmail.com</p>
+                </a>
+            </div>
+            <div class="footer-icons__flex">
+                <a class="footer-icons__flex__second" href="#"><i class="fa-brands fa-facebook-f"></i>
+                    <p class="icon-text">@sabasperky</p>
+                </a>
+                <a class="footer-icons__flex__second" href="tel:+420000000000"><i class="fa-solid fa-phone"></i>
+                    <p class="icon-text">+420000000000</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script>
+        new Glide('.glide').mount()
+    </script>
+</body>
+
+</html>

@@ -21,7 +21,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1em;
+    padding: 1em 0 1em 0;
     width: 85%;
     margin: auto;
 }
@@ -68,6 +68,18 @@ header .button {
     border: 2px solid var(--turquoise);
     border-radius: 28px;
     padding: 10px;
+    width: 160px;
+    margin: auto;
+}
+
+header .downbutton {
+    display: flex;
+    flex-direction: column;
+}
+
+.downbutton .fa-angles-down {
+    font-size: 50px;
+    padding-bottom: .5em;
 }
 
 .glide, .glide__slide img {
